@@ -1,40 +1,40 @@
 html {
     height: 100%;
     border: 0.3rem solid black;
+    padding-left: 2rem;
 }
 
 body {
     height: 90%;
-    background-image: linear-gradient(to bottom right, #31acc2, #717580);
+    background-image: linear-gradient(to bottom right, skyblue, mediumturquoise);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 
 h1 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /*text-align: center; */
-    color: lightgray;
+    text-align: center;
+    color: coral;
     font-size: 72px;
     font-family: "Times New Roman", serif;
 }
 
 h2 {
-    color: lightgray;
+    color: coral;
     font-size: 56px;
 }
 
 h3 {
-    color: lightgray;
+    color: peru;
     font-size: 32px;
 }
 
 p {
     text-indent: 2rem;
-    color: darkorange;
+    color: black;
     font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

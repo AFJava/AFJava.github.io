@@ -1,38 +1,57 @@
-html {
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0px)
+    }
+}
+
+html, body {
     height: 100%;
-    border: 0.3rem solid black;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
     padding-left: 2rem;
 }
 
 body {
-    height: 90%;
+    min-height: 100vh;
+    padding-right: calc(100vw - 100%);
     background-image: linear-gradient(to bottom right, skyblue, mediumturquoise);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 h1 {
-    overflow: hidden;
+    /**/
+    transform: translateY(-30px);
+    animation: slideDown 1s ease 0s 1 normal forwards;
+    will-change: transform;
     white-space: nowrap;
     text-align: center;
-    color: coral;
+    color: rgb(255, 90, 30);
     font-size: 72px;
     font-family: "Times New Roman", serif;
 }
 
 h2 {
-    color: coral;
+    color: rgb(255, 90, 30);
     font-size: 56px;
 }
 
 h3 {
-    color: darkgoldenrod;
+    color: coral;
     font-size: 32px;
 }
 
 p {
     text-indent: 2rem;
     color: black;
+    line-height: 165%;
     font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -41,7 +60,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     overflow: hidden;
-    color: beige;
+    color: coral;
     text-indent: 2rem;
     text-decoration: none;
     font-size: 32px;

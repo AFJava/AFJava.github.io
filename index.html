@@ -6,13 +6,6 @@
         <title>Allen's Webpage</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    
-    <script>
-        // Ensure the page starts at the top
-        window.addEventListener('load', () => {
-            window.scrollTo(0, 0);
-        });
-    </script>
 
     <body>
         <header>
@@ -20,32 +13,28 @@
         </header>
         
         <div class = "topnav">
-            <a href = "#About me">About me</a>
-            <a href = "#Projects">Projects</a>
-            <a href = "#Resume">Resume</a>
+            <a href = "#About">About</a>
+            <a href = "projects.html">Projects</a>
+        </div>
+        
+        <div id = "About">
+            <p>Hi, my name is Allen Feng, and I am a computer science & physics student at Duke in the Class of 2028. This website serves as my digital portfolio. </p>
         </div>
 
-        <div id="About me"></div>
-            <h2>About Me</h2>
-            <p>Hi, my name is Allen Feng, and I am a computer science & physics student at Duke in the Class of 2028. Here's a little bit about me: </p>
-            <p>I am currently a percussionist in the Duke Wind Symphony. Previously, I was 1st chair percussionist in the Tennessee 9-10 All-State Concert Band, 2nd chair in the 11-12 All-State Symphony Orchestra, and 2nd chair in the 11-12 All-State Concert Band.</p>
-            <p>I am most interested in the performance of percussion ensemble pieces. My high school ensemble's performance of Fandango 13 by Michael Burritt is linked below. </p>
-            <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/HWBbhgkxm6w?si=N-OaHBPJCTXQbFvK" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            loading = "lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <p></p>
-        </div>
-
-        <div id="Projects">
-            <h2>Projects</h2>
-            <h3>Newton's Method calculator (Java)</h3>
-            <h3>Modeling Lorentz Force (Fortran 95)</h3>
-        </div>
-
-        <div id="Resume">
+        <div id = "Resume">
             <h2>Resume</h2>
+        </div>
+
+        <div id = "Projects">
+            <h2>Projects</h2>
+
+            <div id = "calculator">
+                <h3>Newton's Method calculator (Java)</h3>
+            </div>
+
+            <div id = "lorentz">
+                <h3>Modeling Lorentz Force (Fortran 95)</h3>
+            </div>    
         </div>
 
         <footer>

@@ -24,13 +24,10 @@ body {
     background-image: linear-gradient(to bottom right, skyblue, mediumturquoise);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100vw;
 }
 
 h1 {
-    /**/
-    transform: translateY(-30px);
-    animation: slideDown 1s ease 0s 1 normal forwards;
-    will-change: transform;
     white-space: nowrap;
     text-align: center;
     color: rgb(255, 90, 30);
@@ -64,4 +61,23 @@ p {
     text-indent: 2rem;
     text-decoration: none;
     font-size: 32px;
+}
+
+::-webkit-scrollbar {
+    width: auto;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: dimgray;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+    
 }

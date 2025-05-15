@@ -10,35 +10,42 @@
     <body>
         <header>
             <h1>Allen's Webpage</h1>
-        </header>
-        
-        <div class = "topnav">
-            <a href = "#About">About</a>
-            <a href = "projects.html">Projects</a>
-        </div>
-        
-        <div id = "About">
-            <p>Hi, my name is Allen Feng, and I am a computer science & physics student at Duke in the Class of 2028. This website serves as my digital portfolio. </p>
-        </div>
-
-        <div id = "Resume">
-            <h2>Resume</h2>
-        </div>
-
-        <div id = "Projects">
-            <h2>Projects</h2>
-
-            <div id = "calculator">
-                <h3>Newton's Method calculator (Java)</h3>
-            </div>
-
-            <div id = "lorentz">
-                <h3>Modeling Lorentz Force (Fortran 95)</h3>
-            </div>    
-        </div>
-
-        <footer>
             
+            <div class = "topnav">
+                <a href = "#About">About</a>
+                <a href = "#Resume">Resume</a>
+                <a href = "#Projects">Projects</a>
+            </div>
+            
+            <section id = "About">
+                <h2>About</h2>
+                <p>Hi, my name is Allen Feng, and I am a computer science & physics student at Duke in the Class of 2028. </p>
+            </section>
+        </header>
+
+        <main>
+            <section id = "Resume">
+                <h2>Resume</h2>
+            </section>
+
+            <section id = "Projects">
+                <h2>Projects</h2>
+
+                <article id = "calculator">
+                    <h3>Newton's Method calculator</h3>
+                    <p> This Java program takes a user's single-variable function as input, then validates the input and stores it as an Expression object. The user is then prompted for a starting point and the number of iterations to run Newton's method, and the program uses Newton's method to find the zeroes of the function. 
+                </article>
+
+                <article id = "lorentz">
+                    <h3>Modeling Lorentz Force (Fortran 95)</h3>
+                </article>
+            </section>
+
+            
+        </main>
+        
+        <footer>
+                
         </footer>
     </body>
 </html>

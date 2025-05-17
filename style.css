@@ -1,6 +1,8 @@
 body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -12,13 +14,23 @@ header {
 }
 
 main {
+    flex-grow: 1;
     background-color: aliceblue;
     overflow: hidden;
     padding: 2rem;
 }
 
+article {
+    border-width: thin;
+    border-color: slategray;
+    border-style: solid;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
 footer {
-    background-color: antiquewhite;
+    background-color: seashell;
     padding: 2rem;
 }
 
@@ -51,8 +63,10 @@ p {
 
 img {
     float: right;
-    border-width: thin;
-    border-color: black;
+    border-width: thick;
+    border-color: coral;
+    border-style: solid;
+    margin-left: 1rem;
 }
 
 .topnav a {
